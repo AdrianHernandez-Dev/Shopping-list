@@ -13,33 +13,20 @@ function handleSubmitButton() {
                 <span class="button-label">delete</span>
               </button>
             </div>
-          </li>`);
-     
-
-          $('.shopping-item-delete').on('click', function(event) {
-            //event.stopPropagation();
-           $(this).closest('li').remove();
-         });
-    
-        $('.shopping-item-toggle').on('click', function(event) {
-            //event.stopPropagation();
-            $(this).closest('li').toggleClass('shopping-item__checked');
-            //console.log('checkHere')
-          });
-        
+          </li>`);   
   });
 }
 
 
-    $('.shopping-item-delete').on('click', function(event) {
+    $('ul').on('click', '.shopping-item-delete', function(event) {
         //event.stopPropagation();
        $(this).closest('li').remove();
      });
 
-    $('.shopping-item-toggle').on('click', function(event) {
+    $('ul').on('click','.shopping-item-toggle', function(event) {
         //event.stopPropagation();
         $(this).closest('li').toggleClass('shopping-item__checked');
-        //console.log('checkHere')
+        console.log('checkHere')
       });
     
       
